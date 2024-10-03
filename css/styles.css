@@ -642,6 +642,169 @@ footer .footer-bottom {
   }
 }
 
+.howitswork {
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .howitswork {
+    margin-bottom: 50px;
+    padding-top: 150px;
+  }
+}
+.howitswork .container h1 {
+  margin: 30px 0;
+}
+.howitswork .container .textWrap {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .howitswork .container .textWrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+.howitswork .container .textWrap .left,
+.howitswork .container .textWrap .right {
+  transition: all 0.3s ease;
+  width: 100%;
+  color: rgb(85, 10, 57);
+  margin: 0 auto;
+  border-radius: 14px;
+  border: 3px solid rgb(234, 225, 217);
+}
+.howitswork .container .textWrap .left .title,
+.howitswork .container .textWrap .right .title {
+  background-color: rgb(234, 225, 217);
+  display: block;
+  padding: 20px 30px;
+  border-radius: 12px 12px 0 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.howitswork .container .textWrap .left .text,
+.howitswork .container .textWrap .right .text {
+  padding: 20px;
+}
+.howitswork .container .textWrap .left .text strong,
+.howitswork .container .textWrap .right .text strong {
+  font-size: 20px;
+  line-height: 24px;
+  border: 3px solid rgb(85, 10, 57);
+  border-radius: 50%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  margin: 10px auto;
+}
+.howitswork .container .textWrap .left .text span,
+.howitswork .container .textWrap .right .text span {
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: center;
+}
+.howitswork .container .textWrap .left:hover {
+  border: 3px solid #23a5b3;
+}
+.howitswork .container .textWrap .left:hover .title {
+  background-color: #23a5b3;
+  color: #fff;
+}
+.howitswork .container .textWrap .right:hover {
+  border: 3px solid #cb3f76;
+}
+.howitswork .container .textWrap .right:hover .title {
+  background-color: #cb3f76;
+  color: #fff;
+}
+
+.faq {
+  padding: 130px 0 40px;
+  background-color: #f8f8f8;
+}
+.faq h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.faq .faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+.faq .faq-item .faq-question {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+.faq .faq-item .faq-question:after {
+  content: "+";
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+.faq .faq-item .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.faq .faq-item.active .faq-question {
+  background-color: #23a5b3;
+  color: #fff;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+.faq .faq-item.active .faq-question:after {
+  content: "-";
+}
+.faq .faq-item.active .faq-answer {
+  max-height: 100px;
+  opacity: 1;
+}
+
+.cookies {
+  padding: 130px 0 40px;
+  text-align: center;
+}
+.cookies h1 {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .cookies h1 {
+    margin-bottom: 50px;
+  }
+}
+.cookies p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+.cookies table, .cookies tr, .cookies th, .cookies td {
+  margin: 0 auto 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.cookies table th, .cookies table td, .cookies tr th, .cookies tr td, .cookies th th, .cookies th td, .cookies td th, .cookies td td {
+  padding: 10px;
+}
+
 html {
   margin: 0;
   padding: 0;

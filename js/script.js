@@ -14,7 +14,7 @@ navItems.forEach(item => {
     nav.classList.remove('nav-open');
   });
 });
-
+//active section
 function showSection(sectionId) {
   // Hide all sections
   const sections = document.querySelectorAll(".section");
@@ -47,7 +47,7 @@ window.addEventListener("hashchange", handleHashChange);
 
 // Call the function on page load to show the correct section
 handleHashChange();
-
+//slick slider
 $(".sliders").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -64,7 +64,7 @@ $(".sliders").slick({
    
   ],
 });
-
+//registration and login
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
   
@@ -123,5 +123,27 @@ let inputs = document.querySelectorAll('input');
 inputs.forEach(input => {
   input.addEventListener('input', function() {
     this.nextElementSibling.innerText = ''; // Clear error message on input
+  });
+});
+
+
+//faqs
+document.addEventListener('DOMContentLoaded', function() {
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector('.faq-question');
+
+    question.addEventListener('click', function() {
+      // Toggle active class for the clicked item
+      item.classList.toggle('active');
+
+      // Close other FAQ items
+      faqItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+        }
+      });
+    });
   });
 });
