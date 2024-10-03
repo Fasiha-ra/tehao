@@ -777,7 +777,7 @@ footer .footer-bottom {
 }
 
 .cookies {
-  padding: 130px 0 40px;
+  padding: 130px 15px 40px;
   text-align: center;
 }
 .cookies h1 {
@@ -796,13 +796,50 @@ footer .footer-bottom {
   width: 100%;
   margin: 0 auto 20px;
 }
-.cookies table, .cookies tr, .cookies th, .cookies td {
+.cookies table,
+.cookies tr,
+.cookies th,
+.cookies td {
   margin: 0 auto 20px;
   border: 1px solid black;
   border-collapse: collapse;
 }
-.cookies table th, .cookies table td, .cookies tr th, .cookies tr td, .cookies th th, .cookies th td, .cookies td th, .cookies td td {
+.cookies table th,
+.cookies table td,
+.cookies tr th,
+.cookies tr td,
+.cookies th th,
+.cookies th td,
+.cookies td th,
+.cookies td td {
   padding: 10px;
+}
+
+.terms {
+  padding: 130px 20px 40px;
+}
+.terms h1 {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .terms h1 {
+    margin-bottom: 50px;
+  }
+}
+.terms p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.helpcenter {
+  padding: 130px 20px 40px;
+}
+.helpcenter h3, .helpcenter p, .helpcenter li {
+  margin-bottom: 15px;
+}
+
+.userguides {
+  padding: 130px 20px 40px;
 }
 
 html {

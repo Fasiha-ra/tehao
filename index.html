@@ -24,8 +24,8 @@
         </div>
         <nav>
           <ul class="nav-links">
-            <li class="nav-item"><a href="#"><button class="secondary">Envie de proposer</button></a></li>
-            <li class="nav-item"><a href="#"><button class="btn ">Besoin de rechercher</button></a></li>
+            <li class="nav-item"><a href="#registration" onclick="showSection('contact')"><button class="secondary">Envie de proposer</button></a></li>
+            <li class="nav-item"><a href="#login" onclick="showSection('contacts')"><button class="btn ">Besoin de rechercher</button></a></li>
             <li class="nav-item"><a href="#home"  onclick="showSection('home')">Home</a></li>
             <li class="nav-item"><a href="#howitswork"  onclick="showSection('howitswork')">How Its Work</a></li>
             <li class="nav-item"><a href="#registration"  onclick="showSection('contact')">Registration</a></li>
@@ -448,6 +448,75 @@
           </div>
          </section>
         <!-- cookies end -->
+        <!-- terms start -->
+         <section id="terms" class="terms section" >
+          <div class="container">
+            <h1>Conditions and Terms</h1>
+            <div class="term">
+              <p>Les présentes Conditions Générales d’Utilisation (ci-après désignées « CGU ») régissent l’accès au Site qui y est proposé aux Utilisateurs. En utilisant le Site, vous accepterez sans réserve ces CGU, la Politique de confidentialité et les Mentions légales de TCHAO TCHAO</p>
+              <h3>Article 1 - Définitions</h3>
+              <p> <strong> Annonce :</strong> désigne toute annonce de mise en location d’un logement pour une courte durée ou toute annonce de recherche de location de logement pour une courte durée.
+             </p>
+             <p> <strong>Annonceur : </strong> désigne l’Utilisateur publiant une Annonce sur le Site.</p>
+             <p><strong>Compte :</strong> désigne l’espace personnel de l’Utilisateur lui permettant d’accéder et d’utiliser les Fonctionnalités du Site. désigne l’espace personnel de l’Utilisateur lui permettant d’accéder et d’utiliser les Fonctionnalités du Site.</p>
+             <p> <strong>Annonceur : </strong> désigne l’Utilisateur publiant une Annonce sur le Site.</p>
+             <p><strong>Compte :</strong> désigne l’espace personnel de l’Utilisateur lui permettant d’accéder et d’utiliser les Fonctionnalités du Site. désigne l’espace personnel de l’Utilisateur lui permettant d’accéder et d’utiliser les Fonctionnalités du Site.</p>
+             <h3>Article 2 – Objet</h3>
+              <p> Ces CGU ont pour objet de définir les conditions d’accessibilité et d’utilisation du Site.
+             </p>
+             <p> Elles ont pour objet d’accorder à l’Utilisateur un droit personnel, non cessible et non exclusif, d’accès et d’utilisation du Site mis à disposition de l’Utilisateur à titre gracieux par TCHAO TCHAO suite à son Inscription</p>
+             <p><strong>Compte :</strong> désigne l’espace personnel de l’Utilisateur lui permettant d’accéder et d’utiliser les Fonctionnalités du Site. désigne l’espace personnel de l’Utilisateur lui permettant d’accéder et d’utiliser les Fonctionnalités du Site.</p>
+           <h3>Article 3 – Acceptation des CGU</h3>
+           <p>En accédant ou en utilisant le Site, le Visiteur ou l’Utilisateur accepte sans réserve ces CGU.</p>
+           <p>TCHAO TCHAO peut procéder à la mise à jour de ces CGU à tout moment.</p>
+           <p>Si le Visiteur ou l’Utilisateur n’accepte pas les modifications apportées à ces CGU, il doit cesser toute utilisation du Site.</p>
+            </div>
+          </div>
+         </section>
+        <!-- terms end -->
+        <!--help center start -->
+        <section id="helpcenter" class="helpcenter section">
+          <div class="container">
+            <h1>Help Center</h1>
+            <p>Welcome to our Help Center. Find the answers to your questions or contact our support team.</p>
+        
+            <h3>FAQs</h3>
+            <ul>
+              <li><a href="#">How do I reset my password?</a></li>
+              <li><a href="#">What is your return policy?</a></li>
+              <li><a href="#">How can I track my order?</a></li>
+            </ul>
+        
+            <h3>Contact Support</h3>
+            <p>Need more help? Reach us at <a href="mailto:support@example.com">support@example.com</a> or call 1-800-123-4567.</p>
+        
+            <h3>User Guides</h3>
+            <p><a href="#">View our step-by-step user guides</a> to help you get started.</p>
+        
+            <h3>Troubleshooting</h3>
+            <p><a href="#">Common issues</a> and how to resolve them.</p>
+        
+            <h3>Billing</h3>
+            <p><a href="#">Learn about billing, payments, and refunds.</a></p>
+          </div>
+        </section>
+        <!-- help center end -->
+         <!-- user guides start -->
+         <section id="userguides" class="userguides section">
+          <div class="container">
+            <h1>User Guides</h1>
+            <p>Welcome to our User Guides section. Below, you'll find comprehensive information to help you get the most out of our platform.</p>
+            
+            <p><strong>1. Getting Started:</strong> This guide will walk you through setting up your account, basic navigation, and configuring essential settings. It’s perfect for new users just getting acquainted with the platform.</p>
+            
+            <p><strong>2. Profile Customization:</strong> Learn how to personalize your profile by adding a profile picture, updating your information, and managing your preferences to match your individual style.</p>
+            
+            <p><strong>3. Order Management:</strong> Understand how to view your order history, track ongoing orders, edit current orders, and cancel if necessary, ensuring smooth transactions.</p>
+            
+            <p><strong>4. Advanced Features:</strong> Dive into our more sophisticated features, such as integrating third-party tools, customizing workflows, and using analytics for better decision-making.</p>
+          </div>
+        </section>
+         <!-- user guides end -->
        <!-- footer start -->
     <footer>
       <div class="footer-container">
@@ -456,25 +525,26 @@
           <div class="underline"></div>
           <ul>
             <li><a href="mailto:contact@tchaotchao.fr">N'hésitez pas à nous écrire à contact@tchaotchao.fr</a></li>
-            <li><a href="#howitswork" onclick="showSection('howitswork')">Comment ça marche ?</a></li>
-            <li><a href="#">Qui sommes-nous ?</a></li>
-            <li><a href="#faq"  onclick="showSection('faq')">Aide / FAQ</a></li>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#howitswork" onclick="showSection('howitswork')">How its Work</a></li>
+         
+            <li><a href="#faq"  onclick="showSection('faq')">FAQ</a></li>
           </ul>
         </div>
  
         <div class="footer-section">
-          <h3>À PROPOS</h3>
+          <h3>USEFUL LINKS</h3>
           <div class="underline"></div>
           <ul>
-            <li><a href="#">Conditions générales d'utilisation</a></li>
-            <li><a href="#">Politique protections des données</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#cookies" onclick="showSection('cookies')">Politique cookies</a></li>
+            <li><a href="#terms" onclick="showSection('terms')">Conditions and Terms</a></li>
+            <li><a href="#userguides" onclick="showSection('userguides')">User Guides:</a></li>
+            <li><a href="#helpcenter" onclick="showSection('helpcenter')">Help Center</a></li>
+            <li><a href="#cookies" onclick="showSection('cookies')">Cookies</a></li>
           </ul>
         </div>
   
         <div class="footer-section">
-          <h3>NOUS SUIVRE</h3>
+          <h3>SOCIAL LINKS</h3>
           <div class="underline"></div>
           <div class="social-icons">
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
