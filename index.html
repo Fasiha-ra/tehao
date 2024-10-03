@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Tchao Tchao</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="container">
+        <div class="logo">
+         <link rel="stylesheet" href="/"> <img src="/imgs/logo.png" alt="Logo" /></link>
+        </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="#"><button class="secondary">Envie de proposer</button></a></li>
+            <li class="nav-item"><a href="#"><button class="btn ">Besoin de rechercher</button></a></li>
+            <li class="nav-item"><a href="#home"  onclick="showSection('home')">Comment ça marche ?</a></li>
+            <li class="nav-item"><a href="#about"  onclick="showSection('about')">Inscription</a></li>
+            <li class="nav-item"><a href="#contact"  onclick="showSection('contact')">Connexion</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+    </header>
+     <!-- header end -->
+       <!-- home start -->
+    <section id="home" class="home section">
+     <div class="container">
+      <div class="heroWrap">
+        <div class="textWrap">
+           <h1>Partagez une location le temps</h1>
+        <p>
+          Des économies partagées entre particuliers</p>
+        </div>
+      <!-- <div class="imgWrap">
+        <img src="/imgs/hero.png" alt="hero">
+      </div> -->
+     </div>
+     <div class="frame">
+      <div class="textWrap">
+          <h3 >Trouvez maintenant !</h3>
+        <button class="secondary">Je suis flexible</button>
+      </div>
+    
+      <div class="form">
+        <!-- Location Field -->
+        <div class="inputField">
+         <div class="inputWrap"> <label>Ou</label>
+          <input
+            type="text"
+            placeholder="Ville, département, région"
+            class="focus:outline-none"
+          /></div>
+       
+    
+        <!-- Arrival Date -->
+        <div class="inputWrap">
+          <label >Arrivée</label>
+          <input
+            type="date"
+            class="bg-pink-200 p-2 rounded-lg focus:outline-none"
+          />
+        </div>
+    
+        <!-- Departure Date -->
+        <div class="inputWrap">
+          <label >Départ</label>
+          <input
+            type="date"
+            class="bg-pink-200 p-2 rounded-lg focus:outline-none"
+          />
+        </div>
+    
+        <!-- Number of People -->
+        <div class="inputWrap">
+          <label >Personne</label>
+          <input
+            type="number"
+            placeholder="Nombre de personnes"
+            class="bg-pink-200 p-2 rounded-lg focus:outline-none"
+          />
+        </div>
+    
+        <!-- Search Button -->
+        <button class="white">
+          Rechercher
+        </button>
+      </div>
+    </div> 
+  </div>
+  <div class="cards">
+    <div class="container">
+     <div class="card">
+       <strong class="title">Rapide</strong>
+      <div class="bar"></div>
+      <p>Simple et rapide, en fonction d'un lieu, d'une date, choisissez  votre location partagée et réservez là !</p>
+    </div>
+     <div class="card">
+       <strong class="title">Économique</strong>
+      <div class="bar"></div>
+      <p>-50%, -60%, -70%... d'économie partagée
+        pour mieux profiter de votre séjour</p>
+    </div>
+     <div class="card">
+       <strong class="title">Collaboratif</strong>
+      <div class="bar"></div>
+      <p>Les profils sont validés par notre équipe
+        et la communauté.
+        Vous savez ainsi avec qui vous allez cohabiter.</p>
+    </div>
+    </div>
+  </div>
+</div>
+    </section>
+    <section id="about" class="about section">
+     
+    </section>
+     <!-- home end -->
+       <!-- footer start -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>INFORMATIONS</h3>
+          <div class="underline"></div>
+          <ul>
+            <li><a href="mailto:contact@tchaotchao.fr">N'hésitez pas à nous écrire à contact@tchaotchao.fr</a></li>
+            <li><a href="#">Comment ça marche ?</a></li>
+            <li><a href="#">Qui sommes-nous ?</a></li>
+            <li><a href="#">Aide / FAQ</a></li>
+          </ul>
+        </div>
+ 
+        <div class="footer-section">
+          <h3>À PROPOS</h3>
+          <div class="underline"></div>
+          <ul>
+            <li><a href="#">Conditions générales d'utilisation</a></li>
+            <li><a href="#">Politique protections des données</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique cookies</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-section">
+          <h3>NOUS SUIVRE</h3>
+          <div class="underline"></div>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2024 TchaoTchao - Tous droits réservés
+      </div>
+    </footer>
+     <!-- footer end -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
