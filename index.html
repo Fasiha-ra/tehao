@@ -15,7 +15,7 @@
     <header>
       <div class="container">
         <div class="logo">
-         <link rel="stylesheet" href="/"> <img src="/imgs/logo.png" alt="Logo" /></link>
+         <a  href="#home" onclick="showSection('home')"> <img src="/imgs/logo.png" alt="Logo" /></a>
         </div>
         <div class="hamburger">
           <div class="bar"></div>
@@ -27,6 +27,7 @@
             <li class="nav-item"><a href="#"><button class="secondary">Envie de proposer</button></a></li>
             <li class="nav-item"><a href="#"><button class="btn ">Besoin de rechercher</button></a></li>
             <li class="nav-item"><a href="#home"  onclick="showSection('home')">Home</a></li>
+            <li class="nav-item"><a href="#howitswork"  onclick="showSection('howitswork')">Home</a></li>
             <li class="nav-item"><a href="#registration"  onclick="showSection('contact')">Registration</a></li>
             <li class="nav-item"><a href="#login"  onclick="showSection('contacts')">Login</a></li>
             
@@ -274,39 +275,73 @@
   </div>
 </div>
     </section>
-    <section id="registration" class="registration section">
-     <div class="container">
-   
-      <form action="">
-           <h1>Registration</h1>
-           <p>Lorem ipsum dolor, sit amet consectetur </p>
-           <div class="bar"></div>
-           <div class="inputWrap">
-            <div class="field">
-              <label for="">First Name</label>
-              <input type="text">
-            </div>
-            <div class="field"></div>
-              <label for="">Last Name</label>
-              <input type="text">
-            </div>
-           </div>
-           <div class="field">
-            <label for="">Email</label>
-            <input type="email">
+      <!-- home end -->
+         <!-- registration start -->
+         <section id="registration" class="registration section">
+          <div class="container">
+            <form id="registrationForm">
+              <h1>Registration</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur</p>
+              <div class="bar"></div>
+              <div class="inputWrap">
+                <div class="field">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName">
+                  <span class="error" id="firstNameError"></span>
+                </div>
+                <div class="field">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName">
+                  <span class="error" id="lastNameError"></span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="regEmail" name="email">
+                <span class="error" id="emailError"></span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone No</label>
+                <input type="number" id="phone" name="phone">
+                <span class="error" id="phoneError"></span>
+              </div>
+              <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="regPassword" name="password">
+                <span class="error" id="passwordError"></span>
+              </div>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, at.</span>
+              <button class="btn" type="submit">Submit</button>
+            </form>
           </div>
-          <div class="field">
-            <label for="">Phone No</label>
-            <input type="number">
+        </section>
+        <!-- registration end-->
+        
+        <!-- login start -->
+        <section id="login" class="login section">
+          <div class="container">
+            <form id="loginForm">
+              <h1>Login</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur</p>
+              <div class="bar"></div>
+              <div class="field">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="loginEmail">
+              </div>
+              <div class="field">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="loginPassword">
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" checked>
+                <label>Lorem, ipsum dolor.</label>
+              </div>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, at.</span>
+              <button class="btn">Submit</button>
+            </form>
           </div>
-          <div class="field">
-            <label for="">Password</label>
-            <input type="password">
-          </div>
-          </form>
-     </div>
-    </section>
-     <!-- home end -->
+        </section>
+       <!-- login end -->
        <!-- footer start -->
     <footer>
       <div class="footer-container">

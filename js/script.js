@@ -64,3 +64,64 @@ $(".sliders").slick({
    
   ],
 });
+
+document.getElementById('registrationForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  // Get form values
+  let firstName = document.getElementById('firstName').value;
+  let lastName = document.getElementById('lastName').value;
+  let email = document.getElementById('regEmail').value;
+  let phone = document.getElementById('phone').value;
+  let password = document.getElementById('regPassword').value;
+  
+  // Simple validation
+  let isValid = true;
+
+  // Clear previous error messages
+  document.getElementById('firstNameError').innerText = '';
+  document.getElementById('lastNameError').innerText = '';
+  document.getElementById('emailError').innerText = '';
+  document.getElementById('phoneError').innerText = '';
+  document.getElementById('passwordError').innerText = '';
+  
+  if (!firstName) {
+    document.getElementById('firstNameError').innerText = 'First Name is required';
+    isValid = false;
+  }
+  
+  if (!lastName) {
+    document.getElementById('lastNameError').innerText = 'Last Name is required';
+    isValid = false;
+  }
+  
+  if (!email) {
+    document.getElementById('emailError').innerText = 'Email is required';
+    isValid = false;
+  }
+  
+  if (!phone) {
+    document.getElementById('phoneError').innerText = 'Phone No is required';
+    isValid = false;
+  }
+  
+  if (!password) {
+    document.getElementById('passwordError').innerText = 'Password is required';
+    isValid = false;
+  }
+  
+  // If form is valid, transfer data to login form
+  if (isValid) {
+    document.getElementById('loginEmail').value = email;
+    document.getElementById('loginPassword').value = password;
+    alert('Registration successful! You can now login.');
+  }
+});
+
+// Clear error messages on input
+let inputs = document.querySelectorAll('input');
+inputs.forEach(input => {
+  input.addEventListener('input', function() {
+    this.nextElementSibling.innerText = ''; // Clear error message on input
+  });
+});
