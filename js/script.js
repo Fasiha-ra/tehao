@@ -47,3 +47,20 @@ window.addEventListener("hashchange", handleHashChange);
 
 // Call the function on page load to show the correct section
 handleHashChange();
+
+$(".sliders").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+       arrows:false
+      },
+    },
+   
+  ],
+});

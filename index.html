@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- slick links -->
+  <link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Tchao Tchao</title>
   </head>
@@ -23,9 +26,9 @@
           <ul class="nav-links">
             <li class="nav-item"><a href="#"><button class="secondary">Envie de proposer</button></a></li>
             <li class="nav-item"><a href="#"><button class="btn ">Besoin de rechercher</button></a></li>
-            <li class="nav-item"><a href="#home"  onclick="showSection('home')">Comment ça marche ?</a></li>
-            <li class="nav-item"><a href="#about"  onclick="showSection('about')">Inscription</a></li>
-            <li class="nav-item"><a href="#contact"  onclick="showSection('contact')">Connexion</a></li>
+            <li class="nav-item"><a href="#home"  onclick="showSection('home')">Home</a></li>
+            <li class="nav-item"><a href="#registration"  onclick="showSection('contact')">Registration</a></li>
+            <li class="nav-item"><a href="#login"  onclick="showSection('contacts')">Login</a></li>
             
           </ul>
         </nav>
@@ -231,10 +234,77 @@
       </div>
     </div>
   </div>
+  <div class="heroSlider">
+    <div class="container">
+      <div class="bar"></div>
+      <h3>Quelques retours d'expériences...</h3>
+      <div class="sliders">
+        <div class="slides">
+          <strong class="title">« Nous te remercions Michel !!! »</strong>
+          <p>L'appartement est très agréable, bien rénové et bien situé à proximité des commerces et de la plage. Arrêt du bus proche pour se rendre au cœur de Saint Malo. Possibilité de s'y rendre à pied par le remblais, belle promenade.</p>
+          <span>
+            Martine </span>
+        </div>
+        <div class="slides">
+          <strong class="title">« Nous te remercions Michel !!! »</strong>
+          <p>L'appartement est très agréable, bien rénové et bien situé à proximité des commerces et de la plage. Arrêt du bus proche pour se rendre au cœur de Saint Malo. Possibilité de s'y rendre à pied par le remblais, belle promenade.</p>
+          <span>
+            Martine </span>
+        </div>
+        <div class="slides">
+          <strong class="title">« Nous te remercions Michel !!! »</strong>
+          <p>L'appartement est très agréable, bien rénové et bien situé à proximité des commerces et de la plage. Arrêt du bus proche pour se rendre au cœur de Saint Malo. Possibilité de s'y rendre à pied par le remblais, belle promenade.</p>
+          <span>
+            Martine </span>
+        </div>
+        <div class="slides">
+          <strong class="title">« Nous te remercions Michel !!! »</strong>
+          <p>L'appartement est très agréable, bien rénové et bien situé à proximité des commerces et de la plage. Arrêt du bus proche pour se rendre au cœur de Saint Malo. Possibilité de s'y rendre à pied par le remblais, belle promenade.</p>
+          <span>
+            Martine </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btnDiv">
+    <div class="container">
+      <h3>Vous serez surpris !</h3>
+      <button class="btn">Essayez dès maintenant !</button>
+    </div>
+  </div>
 </div>
     </section>
-    <section id="about" class="about section">
-     
+    <section id="registration" class="registration section">
+     <div class="container">
+   
+      <form action="">
+           <h1>Registration</h1>
+           <p>Lorem ipsum dolor, sit amet consectetur </p>
+           <div class="bar"></div>
+           <div class="inputWrap">
+            <div class="field">
+              <label for="">First Name</label>
+              <input type="text">
+            </div>
+            <div class="field"></div>
+              <label for="">Last Name</label>
+              <input type="text">
+            </div>
+           </div>
+           <div class="field">
+            <label for="">Email</label>
+            <input type="email">
+          </div>
+          <div class="field">
+            <label for="">Phone No</label>
+            <input type="number">
+          </div>
+          <div class="field">
+            <label for="">Password</label>
+            <input type="password">
+          </div>
+          </form>
+     </div>
     </section>
      <!-- home end -->
        <!-- footer start -->
@@ -277,6 +347,9 @@
       </div>
     </footer>
      <!-- footer end -->
+     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

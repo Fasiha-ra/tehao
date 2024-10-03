@@ -1,0 +1,12 @@
+@import "../layout/variables";
+#registration{
+    padding-top: 150px;
+    .container{
+        form{
+            width: 100%;
+            max-width: 554px;
+            margin: 0 auto;
+            background-color: $white; 
+        }
+    }
+}

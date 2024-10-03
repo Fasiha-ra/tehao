@@ -272,6 +272,7 @@ footer .footer-bottom {
   flex-direction: column;
 }
 .frame .form .inputField .inputWrap label {
+  margin-bottom: 10px;
   color: #fff;
 }
 .frame .form .inputField .inputWrap input {
@@ -350,7 +351,12 @@ footer .footer-bottom {
   margin: 0 auto 20px;
 }
 .comment h3 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .comment h3 {
+    margin-bottom: 30px;
+  }
 }
 .comment .cardHolder {
   display: grid;
@@ -403,6 +409,12 @@ footer .footer-bottom {
 .blogs {
   text-align: center;
   color: #000;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .blogs {
+    margin-bottom: 50px;
+  }
 }
 .blogs .bar {
   width: 40px;
@@ -412,7 +424,12 @@ footer .footer-bottom {
   margin: 0 auto 20px;
 }
 .blogs h3 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .blogs h3 {
+    margin-bottom: 30px;
+  }
 }
 .blogs .blogWrap {
   display: grid;
@@ -460,6 +477,87 @@ footer .footer-bottom {
 .blogs .blogWrap .blog .text span {
   display: block;
   margin-bottom: 10px;
+}
+
+.heroSlider {
+  background-color: #cb3f76;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 40px 0 10px;
+}
+@media (min-width: 992px) {
+  .heroSlider {
+    margin-bottom: 50px;
+  }
+}
+.heroSlider .bar {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.heroSlider h3 {
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .heroSlider h3 {
+    margin-bottom: 30px;
+  }
+}
+.heroSlider .sliders {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.heroSlider .sliders .slides {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px;
+}
+.heroSlider .sliders .slides .title {
+  font-size: 18px;
+  line-height: 22px;
+}
+@media (min-width: 992px) {
+  .heroSlider .sliders .slides .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.heroSlider .sliders .slides span {
+  font-size: 14px;
+  line-height: 18px;
+}
+.heroSlider .sliders .slides strong, .heroSlider .sliders .slides span {
+  display: block;
+  margin-bottom: 15px;
+}
+.heroSlider .sliders .slides p {
+  max-width: 500px;
+  padding: 0 10px;
+  margin: 0 auto 15px;
+}
+@media (min-width: 992px) {
+  .heroSlider .sliders .slides p {
+    max-width: 700px;
+  }
+}
+
+.btnDiv {
+  text-align: center;
+}
+
+#registration {
+  padding-top: 150px;
+}
+#registration .container form {
+  width: 100%;
+  max-width: 554px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 html {
